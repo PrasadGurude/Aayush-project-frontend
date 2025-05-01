@@ -9,7 +9,7 @@ export default function LoginForm() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [error, setError] = useState("")
-  const { login, isLoading } = useUser()
+  const { login, isLoading , user } = useUser()
   const navigate = useNavigate()
 
   const handleSubmit = async (e) => {
